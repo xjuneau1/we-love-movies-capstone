@@ -30,7 +30,7 @@ npx knex seed:run
 npm run start:dev
 ```
 
-<p>This is will run the server continuosly on port 5000. If you would like to view the API you can open you browser and naviagate to</p>
+<p>This is will run the server continuously on port 5000. If you would like to view the API you can open you browser and naviagate to</p>
 
 ```javascript
 localhost:5000
