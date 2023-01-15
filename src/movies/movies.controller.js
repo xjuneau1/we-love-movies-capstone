@@ -35,6 +35,7 @@ async function getTheaterByMovie(req, res, next){
 
 async function getMovieReviews(req, res, next){
     const movie_id = req.params.movieId
+    console.log(movie_id)
     const reviewList = await service.reviewForMovie(movie_id)
     res.json({ data: reviewList })
 }

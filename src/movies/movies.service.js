@@ -16,7 +16,7 @@ function showingList(is_showing){
     return knex("movies as m")
     .distinct()
     .join("movies_theaters as mt", "m.movie_id","mt.movie_id")
-    .select("m.movie_id as id","m.title","m.runtime_in_minutes","m.rating","m.description","m.image_url")
+    .select("m.movie_id","m.title","m.runtime_in_minutes","m.rating","m.description","m.image_url")
     .where({ "mt.is_showing": true })
 }
 
